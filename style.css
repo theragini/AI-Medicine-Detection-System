@@ -1,0 +1,128 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #34495e;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-top: 30px;
+}
+
+/* Styling the container to center and align content */
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the video container */
+#video-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 50px;
+  border: 2px solid #3498db;
+  margin-bottom: 20px;
+}
+
+video {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+button {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  margin-top: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Styling for the captured image */
+#captured-image-container {
+  margin-top: 30px;
+  display: none; /* Initially hide the captured image */
+}
+
+#captured-image {
+  width: 100%;
+  max-width: 640px;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the recognized text */
+#recognized-text-container {
+  margin-top: 30px;
+  display: none; /* Initially hide the recognized text */
+}
+
+#recognized-text {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2ecc71;
+  background-color: #ecf0f1;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #dfe6e9;
+  display: inline-block;
+  max-width: 640px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  #recognized-text {
+    font-size: 1.1rem;
+  }
+}

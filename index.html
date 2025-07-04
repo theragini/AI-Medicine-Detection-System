@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-Powered Medicine Detection System</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Add some basic styling */
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #video-container {
+      width: 640px;
+      height: 480px;
+      border: 1px solid black;
+    }
+  </style>
+  
+</head>
+<body>
+  <h1>AI-Powered Medicine Detection System</h1>
+  <div id="video-container">
+    <video id="video" width="640" height="480" autoplay></video>
+    <button id="capture-button">Capture Image</button>
+  </div>
+  <div id="captured-image-container">
+    <img id="captured-image"/>
+  </div>
+  <div>
+    
+  </div>
+  <div id="recognized-text-container">
+    <h2>Recognized Text:</h2>
+    <p id="recognized-text"></p>
+  </div>
+  
+</body>
+<script src='https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js'></script>
+  <script src="script1.js"></script>
+     
+</html>
+
